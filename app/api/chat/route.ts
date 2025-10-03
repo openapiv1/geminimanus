@@ -2,7 +2,7 @@ import { GoogleGenerativeAI, SchemaType } from "@google/generative-ai";
 import { killDesktop, getDesktop } from "@/lib/e2b/utils";
 import { resolution } from "@/lib/e2b/tool";
 
-const GEMINI_API_KEY = "AIzaSyCZBxw64-o0eLyjdkQf4jePt_hkOmKlJ5";
+const GEMINI_API_KEY = "AIzaSyBJ8s_1iuz-P6tt-3_gOcd8hOZ_Fk6k6jI";
 
 export const maxDuration = 36000;
 
@@ -11,10 +11,9 @@ const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 const INSTRUCTIONS = `Nazywasz się Gemini. Jesteś pomocnym asystentem z dostępem do komputera Ubuntu 22.04. 
 
 INFORMACJE O ŚRODOWISKU:
-- Rozdzielczość ekranu: 1024x768 pikseli
+- Rozdzielczość ekranu i wszystkich zzruztów ekranu: 1024x768 pikseli
 - System operacyjny: Ubuntu 22.04 Desktop
 - Środowisko graficzne: GNOME
-- Przeglądarka: Firefox (domyślna)
 
 DOSTĘPNE NARZĘDZIA:
 - computer_use: Kontrola desktopa (screenshot, klikanie, pisanie, przewijanie, przeciąganie) - JEDYNE dostępne narzędzie
